@@ -40,16 +40,21 @@ function createWindow() {
       label: "Help",
       submenu: [
         {
-          label: "Documentation",
+          label: "About PDFKit",
           click: () =>
-            require("electron").shell.openExternal("https://www.example.com"),
+            require("electron").shell.openExternal("https://github.com/pratham-jaiswal/pdf-kit/blob/main/README.md"),
         },
         {
           label: "Report an Issue",
           click: () =>
             require("electron").shell.openExternal(
-              "https://www.exampleissue.com"
+              "https://github.com/pratham-jaiswal/pdf-kit/issues"
             ),
+        },
+        {
+          label: "License",
+          click: () =>
+            require("electron").shell.openExternal("https://github.com/pratham-jaiswal/pdf-kit/blob/main/LICENSE"),
         },
       ],
     },

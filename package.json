@@ -8,7 +8,7 @@
   },
   "author": "Pratham Jaiswal",
   "license": "MIT",
-  "description": "A list of PDF Tools",
+  "description": "PDFKit: A desktop app for managing PDF files effortlessly.",
   "devDependencies": {
     "electron": "^33.2.0",
     "electron-builder": "^25.1.8"

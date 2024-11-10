@@ -1,0 +1,48 @@
+{
+  "name": "pdf-kit",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Pratham Jaiswal",
+  "license": "MIT",
+  "description": "A list of PDF Tools",
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "muhammara": "^5.2.0",
+    "pdf-lib": "^1.17.1"
+  },
+  "build": {
+    "appId": "com.maxxdevs.pdfkit",
+    "productName": "PDF Kit",
+    "win": {
+      "target": "zip",
+      "icon": "assets/icon.ico",
+      "compression": "maximum",
+      "extraFiles": [
+        {
+          "from": "extra-files/",
+          "to": "extra-files/",
+          "filter": [
+            "**/*"
+          ]
+        }
+      ],
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "pratham-jaiswal",
+          "repo": "pdf-kit"
+        }
+      ]
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

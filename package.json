@@ -32,13 +32,6 @@
             "**/*"
           ]
         }
-      ],
-      "publish": [
-        {
-          "provider": "github",
-          "owner": "pratham-jaiswal",
-          "repo": "pdf-kit"
-        }
       ]
     },
     "directories": {

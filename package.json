@@ -19,20 +19,13 @@
   },
   "build": {
     "appId": "com.maxxdevs.pdfkit",
-    "productName": "PDF Kit",
+    "productName": "PDFKit",
     "win": {
+      "sign": false,
       "target": "zip",
       "icon": "assets/icon.ico",
       "compression": "maximum",
-      "extraFiles": [
-        {
-          "from": "extra-files/",
-          "to": "extra-files/",
-          "filter": [
-            "**/*"
-          ]
-        }
-      ]
+      "signAndEditExecutable": false
     },
     "directories": {
       "output": "dist"

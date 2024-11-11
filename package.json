@@ -33,7 +33,7 @@
     },
     "nsis": {
       "oneClick": false,
-      "perMachine": true,
+      "perMachine": false,
       "allowElevation": false,
       "deleteAppDataOnUninstall": true,
       "differentialPackage": true,

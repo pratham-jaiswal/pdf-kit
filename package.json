@@ -20,14 +20,34 @@
   "build": {
     "appId": "com.maxxdevs.pdfkit",
     "productName": "PDFKit",
+    "icon": "resources/icon.png",
     "win": {
-      "sign": false,
-      "target": "zip",
-      "icon": "assets/icon.ico",
+      "target": {
+        "target": "nsis",
+        "arch": ["x64", "ia32"]
+      },
+      "icon": "resources/icon.png",
       "compression": "maximum",
+      "sign": false,
       "signAndEditExecutable": false
     },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowElevation": false,
+      "deleteAppDataOnUninstall": true,
+      "differentialPackage": true,
+      "artifactName": "${productName}-Setup-${version}-${arch}.exe",
+      "installerIcon": "resources/icon.ico",
+      "uninstallerIcon": "resources/icon.ico",
+      "shortcutName": "PDFKit",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerHeaderIcon": "resources/icon.ico"
+    },
     "directories": {
+      "buildResources": "resources",
       "output": "dist"
     }
   }

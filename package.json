@@ -20,13 +20,13 @@
   "build": {
     "appId": "com.maxxdevs.pdfkit",
     "productName": "PDFKit",
-    "icon": "resources/icon.png",
+    "icon": "resources/icon.ico",
     "win": {
       "target": {
         "target": "nsis",
         "arch": ["x64", "ia32"]
       },
-      "icon": "resources/icon.png",
+      "icon": "resources/icon.ico",
       "compression": "maximum",
       "sign": false,
       "signAndEditExecutable": false
